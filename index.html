@@ -40,39 +40,63 @@
          </div>
       </nav>
       <main>
-         <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-            <div class="col-md-5 p-lg-5 mx-auto my-5">
-               <h1 class="display-4 fw-normal">Pick Your Room</h1>
-               <p class="lead fw-normal">We serve the best service for you to get the most comfortable room.</p>
-               <a class="btn btn-outline-secondary" href="#">Let me know</a>
+         <div style="background: url(./assets/img/cover.jpg)" class="jumbotron bg-cover text-white h-100">
+            <div class="container py-5 text-center">
+                <h1 class="display-4 font-weight-bold">Bootstrap static header</h1>
+                <p class="font-italic mb-0">Using simple jumbotron-style component, create a nice Bootstrap 4 header with a background image.</p>
+                <p class="font-italic">Snippe by
+                    <a href="https://bootstrapious.com" class="text-white">
+                        <u>Bootstrapious</u>
+                    </a>
+                </p>
+                <a href="#" role="button" class="btn btn-primary px-5">See All Features</a>
             </div>
-         </div>
+        </div>
+        
          <!-- Container -->
          <div class="container">
             <!-- Delon Section -->
-            <div class="row">
-		<div class="col-sm-5 col-md-6">
-				<img src ="hotel1.jpg" width="500" height="500" role="img">
+            <div class="row py-3">
+               <div class="col-md-6">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                     <div class="carousel-indicators">
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="activer" aria-label="Slide 1" aria-current="true"></button>
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                     </div>
+                     <div class="carousel-inner">
+                       <div class="carousel-item active">
+                         <img src="./assets/img/room.jpg">
+                   
+                       </div>
+                       <div class="carousel-item">
+                        <img src="./assets/img/lobby.jpg">                   
+                       </div>
+                       <div class="carousel-item">
+                        <img src="./assets/img/toilet.png">                   
+                       </div>
+                     </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Next</span>
+                     </button>
+                   </div>
+               </div>
+               <div class="col-md-6">
+                  <h1>Features</h1>
+                  <ul class="list-group list-group-flush">
+                     <li class="list-group-item">1. Multiple Type of Room and Transaction</li>
+                     <li class="list-group-item">2. Best Rating and Price</li>
+                     <li class="list-group-item">3. Facilities and Advantages</li>
+                     <li class="list-group-item">4. More Features</li>
+               </div>
 		</div>
-		<div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-				<img src ="kamar mandi1.jpg" width="500" height="500" role="img">
-		</div>
-		</div>
-		<div class="row">
-		<div class="col-sm-5 col-md-6">
-				<img src ="hotel2.jpg" width="500" height="500" role="img">
-		</div>
-		<div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-				<img src ="kamar mandi2.jpg" width="500" height="500" role="img">
-		</div>
-		</div>
-		<h1>Features</h1>
-		<p class="text-break">1. Multiple Type of Room and Transaction</p>
-		<p class="text-break">2. Best Rating and Price</p>
-		<p class="text-break">3. Facilities and Advantages</p>
-		<p class="text-break">4. More Features</p>
             <!-- Michael Section -->   
-            <div class="row">
+            <div class="row my-5">
                <div class="col-lg-4">
                   <h2>Location</h2>
                   <p>Bertholdt Hotel are located around Indonesia and is always close to one of Indonesia's Tourist attraction.</p>
